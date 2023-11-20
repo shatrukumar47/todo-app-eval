@@ -1,0 +1,9 @@
+<div id="container" class="mt-[20px]">
+    <div *ngFor="let todo of todos">
+        <h2>{{todo.title}}</h2>
+        <p>{{todo.description}}</p>
+        <p>Completed : {{todo.status? "Yes" : "No"}}</p>
+        <button>Edit</button>
+        <button>Delete</button>
+    </div>
+</div>
